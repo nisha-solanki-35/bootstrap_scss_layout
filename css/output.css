@@ -1,0 +1,318 @@
+body {
+  font-family: "Montserrat";
+}
+
+nav {
+  font-family: "Montserrat";
+}
+
+.custom-navbar {
+  background-color: #21243d;
+}
+
+nav .navbar-nav li a {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.background-img {
+  background-image: url(/images/Image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 878px;
+}
+
+.text {
+  padding-top: 200px;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: "Montserrat";
+}
+
+.details {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  font-family: "Montserrat";
+}
+
+.order-button {
+  border-radius: 33px;
+  background-color: #21243d;
+  font-size: 25px;
+  padding: 15px 17px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-section {
+  overflow: hidden;
+  background-color: #21243d;
+  color: #ffffff;
+}
+.menu-section .horizontalYellowRight {
+  position: relative;
+  left: 300px;
+  top: -60px;
+}
+.menu-section .CircleShapeYellowRight {
+  position: relative;
+  right: -100px;
+  top: -460px;
+}
+.menu-section .ShapeYellowTop {
+  position: relative;
+  right: 320px;
+  top: 50px;
+}
+.menu-section .CircleShapeYellowLeft {
+  position: relative;
+  top: 200px;
+  left: -90px;
+}
+.menu-section .verticalYellow {
+  position: relative;
+  top: -200px;
+  right: -190px;
+}
+.menu-section .ShapeYellowBottom {
+  position: relative;
+  top: 120px;
+}
+.menu-section .text-section {
+  text-align: center;
+}
+.menu-section .text-section .menu-heading {
+  font-size: 64px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.menu-section .text-section .menu-details {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  margin: 0px 400px;
+}
+
+.header {
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.header ul {
+  list-style: none;
+}
+.header .follow-us {
+  padding: 200px 140px;
+}
+.header .follow-us .header-title {
+  font-size: 32px;
+}
+.header .about-us {
+  padding: 200px 0px 200px;
+}
+.header .about-us .about, .header .about-us .services, .header .about-us .other {
+  font-size: 32px;
+}
+
+.img-title {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.img-text {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.order-section {
+  background-color: #ffd17e;
+  padding: 200px 0px 150px;
+}
+.order-section .food1Big {
+  overflow: hidden;
+}
+.order-section .CircleShapeBlueLeft {
+  position: relative;
+  top: -200px;
+  left: 200px;
+}
+.order-section .verticalBlueLeft {
+  position: relative;
+  top: 400px;
+  right: 170px;
+}
+.order-section .order-button {
+  padding: 10px 60px;
+  border-radius: 32px;
+  background-color: #21243d;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.order-section .order-text {
+  padding: 0px 20px;
+}
+.order-section .order-text .order-title {
+  font-size: 75px;
+  color: #21243d;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.order-section .order-text .order-details {
+  font-size: 30px;
+  color: #21243d;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.order-section .order-text2 {
+  padding-left: 150px;
+  padding-right: 35px;
+}
+.order-section .order-text2 .order-title {
+  font-size: 75px;
+  color: #21243d;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.order-section .order-text2 .order-details {
+  font-size: 30px;
+  color: #21243d;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.statistics-section {
+  background-color: #21243d;
+}
+.statistics-section .statistics-heading {
+  font-size: 62px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.statistics-section .statistics-details {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.statistics-section .img-section {
+  padding: 50px 0px 90px;
+}
+.statistics-section .shapes-section {
+  height: 110px;
+}
+
+.about-owner {
+  background-image: url(/images/Shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 950px;
+  background-color: #21243d;
+  padding-top: 150px;
+}
+.about-owner .person-img {
+  text-align: center;
+}
+.about-owner .person-details {
+  font-size: 42px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.about-owner .person-name {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.join-us {
+  background-color: #ffd17e;
+  padding-top: 160px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+.join-us .join-us-title {
+  font-size: 75px;
+  color: #21243d;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.join-us .join-us-details {
+  font-size: 30px;
+  color: #21243d;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.join-us .subscribe {
+  margin-top: 70px;
+}
+.join-us .subscribe .placeholder {
+  padding: 10px 80px;
+  border-radius: 32px 31px 31px;
+  background-color: #ffffff;
+  font-size: 25px;
+  padding-left: 20px;
+  border-color: #ffffff;
+}
+.join-us .subscribe .subscribe-button {
+  margin-left: -50px;
+  width: 222px;
+  height: 65px;
+  border-radius: 33px;
+  background-color: #21243d;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.join-us .shapes {
+  padding-top: 80px;
+}
+.join-us .horizontalBlue {
+  position: relative;
+  left: 80px;
+  top: -50px;
+}
+.join-us .ShapeBlue {
+  position: relative;
+  top: -50px;
+  right: -435px;
+}
+.join-us .CircleShapeBlue {
+  position: relative;
+  top: -140px;
+  right: -80px;
+}
+
+/*# sourceMappingURL=output.css.map */
