@@ -19,51 +19,44 @@ nav .navbar-nav li a{
   font-family: "Montserrat";
 }
 
-// .img-position{
-//   position: relative;
-// }
-
 .background-img {
   background-image: url(/images/Image.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 878px;
   // width: 100%;
-}
 
-.text{
-  padding-top: 200px;
-}
-
-.heading{
-  color: $font-color;
-  font-size: 100px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  font-family: 'Montserrat';
-}
-
-.details{
-  color: $font-color;
-  font-size: 30px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  font-family: 'Montserrat';
-}
-
-.order-button{
-  border-radius: 33px;
-  background-color: #21243d;
-  font-size: 25px;
-  padding: 15px 17px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: "Montserrat";
-  text-align: center;
-  text-transform: uppercase;
+  .text{
+    padding-top: 200px;
+  }
+  .heading{
+    color: $font-color;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: 'Montserrat';
+  }
+  .details{
+    color: $font-color;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    font-family: 'Montserrat';
+  }
+  .order-button{
+    border-radius: 33px;
+    background-color: #21243d;
+    font-size: 25px;
+    padding: 15px 17px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .menu-section{
@@ -112,7 +105,7 @@ nav .navbar-nav li a{
       color: $font-color;
       font-weight: 400;
       font-family: "Montserrat";
-      margin: 0px 400px;
+      // margin: 0px 400px;
     }
   }
 }
@@ -351,3 +344,31 @@ nav .navbar-nav li a{
 //     letter-spacing: normal
 //   }
 // }
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-section{
+    .horizontalYellowRight,
+    .CircleShapeYellowRight,
+    .ShapeYellowTop,
+    .CircleShapeYellowLeft,
+    .verticalYellow,
+    .ShapeYellowBottom
+      {
+        display: none;
+      }
+    }
+  .order-section{
+    .CircleShapeBlueLeft,
+    .verticalBlueLeft{
+      display: none;
+    }
+  }
+  .subscribe{
+    .horizontalBlue,
+    .ShapeBlue,
+    .CircleShapeBlue{
+      display: none;
+    }
+  }
+}

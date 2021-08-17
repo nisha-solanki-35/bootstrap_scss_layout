@@ -19,16 +19,14 @@ nav .navbar-nav li a {
 
 .background-img {
   background-image: url(/images/Image.png);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   height: 878px;
 }
-
-.text {
+.background-img .text {
   padding-top: 200px;
 }
-
-.heading {
+.background-img .heading {
   color: #ffffff;
   font-size: 100px;
   font-weight: 700;
@@ -37,8 +35,7 @@ nav .navbar-nav li a {
   line-height: normal;
   font-family: "Montserrat";
 }
-
-.details {
+.background-img .details {
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
@@ -46,8 +43,7 @@ nav .navbar-nav li a {
   letter-spacing: normal;
   font-family: "Montserrat";
 }
-
-.order-button {
+.background-img .order-button {
   border-radius: 33px;
   background-color: #21243d;
   font-size: 25px;
@@ -107,7 +103,6 @@ nav .navbar-nav li a {
   color: #ffffff;
   font-weight: 400;
   font-family: "Montserrat";
-  margin: 0px 400px;
 }
 
 .header {
@@ -313,6 +308,28 @@ nav .navbar-nav li a {
   position: relative;
   top: -140px;
   right: -80px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-section .horizontalYellowRight,
+.menu-section .CircleShapeYellowRight,
+.menu-section .ShapeYellowTop,
+.menu-section .CircleShapeYellowLeft,
+.menu-section .verticalYellow,
+.menu-section .ShapeYellowBottom {
+    display: none;
+  }
+
+  .order-section .CircleShapeBlueLeft,
+.order-section .verticalBlueLeft {
+    display: none;
+  }
+
+  .subscribe .horizontalBlue,
+.subscribe .ShapeBlue,
+.subscribe .CircleShapeBlue {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
