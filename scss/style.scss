@@ -1,12 +1,67 @@
-body{
-    font-family: 'Montserrat';
+@mixin menu-section{
+  .horizontalYellow,
+  .CircleShapeYellowRight,
+  .ShapeYellowTop,
+  .CircleShapeYellowLeft,
+  .verticalYellow,
+  .ShapeYellowBottom
+    {
+      display: none;
+    }
 }
 
-nav{
-  font-family: 'Montserrat';
+@mixin order-section{
+  .CircleShapeBlueLeft,
+  .verticalBlueLeft,
+  .ShapeBlue,
+  .verticalBlue,
+  .CircleShapeBlueRight{
+    display: none;
+  }
+}
+
+@mixin statistics-section{
+  .horizontalYellow,
+  .ShapeYellow,
+  .CircleShapeYellowTop,
+  .CircleShapeYellow,
+  .horizontalYellow,
+  .ShapeYellow
+  {
+    display: none;
+  }
+}
+
+@mixin order-section-two{
+  .ShapeBlue,
+  .horizontalBlue,
+  .CircleShapeBlueBottom,
+  .CircleShapeBlueTop,
+  .verticalBlue{
+    display: none;
+  }
+}
+
+@mixin join-us{
+  .horizontalBlue,
+  .ShapeBlueTop,
+  .CircleShapeBlueTop,
+  .ShapeBlueBottom,
+  .CircleShapeBlueBottom,
+  .verticalBlue{
+    display: none;
+  }
 }
 
 $font-color: #ffffff;
+
+*{
+  font-family: 'Montserrat';
+}
+
+body{
+    overflow-x: hidden;
+}
 
 .custom-navbar{
     background-color: #21243d;
@@ -14,80 +69,70 @@ $font-color: #ffffff;
 
 nav .navbar-nav li a{
   font-size: 25px;
-  color: #ffffff;
+  color: $font-color;
   font-weight: 400;
-  font-family: "Montserrat";
 }
 
 .background-img {
   background-image: url(/images/Image.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 878px;
-  // width: 100%;
-
   .text{
-    padding-top: 200px;
-  }
-  .heading{
-    color: $font-color;
-    font-size: 100px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    font-family: 'Montserrat';
-  }
-  .details{
-    color: $font-color;
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    font-family: 'Montserrat';
-  }
-  .order-button{
-    border-radius: 33px;
-    background-color: #21243d;
-    font-size: 25px;
-    padding: 15px 17px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Montserrat";
-    text-align: center;
-    text-transform: uppercase;
+    margin: 200px auto 200px 40px;
+    .heading{
+      color: $font-color;
+      font-size: 100px;
+      font-weight: 700;
+    }
+    .details{
+      color: $font-color;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .order-button{
+      border-radius: 33px;
+      background-color: #21243d;
+      font-size: 25px;
+      padding: 15px 17px;
+      color: $font-color;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 }
 
 .menu-section{
-  .horizontalYellowRight{
+  overflow: hidden;
+  position: relative;
+  .horizontalYellow{
     position: relative;
-    left: 300px;
-    top: -60px;
+    left: 200px;
+    top: -20px;
   }
   .CircleShapeYellowRight{
     position: relative;
-    right: -100px;
-    top: -460px;
+    top: -100px;
+    left: 50px;
   }
   .ShapeYellowTop{
     position: relative;
-    right: 320px;
-    top: 50px
+    left: -500px;
+    top: 120px
   }
   .CircleShapeYellowLeft{
     position: relative;
-    top: 200px;
+    top: 160px;
     left: -90px;
   }
   .verticalYellow{
     position: relative;
-    top: -200px;
-    right: -190px;
+    top: 10px;
+    left: 25px;
   }
   .ShapeYellowBottom{
     position: relative;
-    top: 120px;
+    left: 1170px;
   }
   overflow: hidden;
   background-color: #21243d;
@@ -105,30 +150,29 @@ nav .navbar-nav li a{
       color: $font-color;
       font-weight: 400;
       font-family: "Montserrat";
-      // margin: 0px 400px;
     }
   }
 }
 
-.header{
+.footer{
   background-color: #111111;
   color: $font-color;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   font-family: 'Montserrat';
   ul{
     list-style: none;
   }
   .follow-us{
-    padding: 200px 140px;
-    .header-title{
-      font-size: 32px;
+    padding: 200px 100px 200px 100px;
+    .footer-title{
+      font-size: 30px;
     }
   }
   .about-us{
     padding: 200px 0px 200px;
     .about, .services, .other{
-      font-size: 32px;
+      font-size: 30px;
     }
   }
 }
@@ -148,82 +192,143 @@ nav .navbar-nav li a{
 }
 
 .order-section{
+  overflow: hidden;
   background-color: #ffd17e;
-  padding: 200px 0px 150px;
   .food1Big{
-    overflow: hidden;
+    position: relative;
+    z-index: 99;
+  }
+  .inner-order-section{
+    .order-text{
+      padding-left: 0px;
+      padding-right: 30px;
+      .order-title{
+        font-size: 75px;
+        color: #21243d;
+        font-weight: 700;
+        font-family: "Montserrat";
+      }
+      .order-details{
+        font-size: 30px;
+        color: #21243d;
+        font-weight: 400;
+        font-family: "Montserrat";
+      }
+    }
   }
   .CircleShapeBlueLeft{
     position: relative;
-    top: -200px;
-    left: 200px;
+    top: 130px;
+    left: 50px;
+    z-index: 0;
+  }
+  .ShapeBlue{
+    position: relative;
+    top: 120px;
+  }
+  .verticalBlueRight{
+    position: relative;
+    top: 30px;
+    right: 20px
   }
   .verticalBlueLeft{
     position: relative;
-    top: 400px;
-    right: 170px;
+    left: 40px;
+    bottom: 25px;
+  }
+  .CircleShapeBlueRight{
+    position: relative;
+    left: 40px;
+    bottom: 80px;
   }
   .order-button{
+    font-size: 25px;
+    text-align: center;
     padding: 10px 60px;
     border-radius: 32px;
+    color: $font-color;
+    font-weight: 700;
     background-color: #21243d;
     text-transform: uppercase;
     margin-top: 50px;
-  }
-  .order-text{
-    padding: 0px 20px;
-    .order-title{
-      font-size: 75px;
-      color: #21243d;
-      font-weight: 700;
-      font-family: "Montserrat";
-    }
-    .order-details{
-      font-size: 30px;
-      color: #21243d;
-      font-weight: 400;
-      font-family: "Montserrat";
-    }
-  }
-  .order-text2{
-    padding-left: 150px;
-    padding-right: 35px;
-    .order-title{
-      font-size: 75px;
-      color: #21243d;
-      font-weight: 700;
-      font-family: "Montserrat";
-    }
-    .order-details{
-      font-size: 30px;
-      color: #21243d;
-      font-weight: 400;
-      font-family: "Montserrat";
-    }
   }
 }
 
 .statistics-section{
   background-color: #21243d;
+  .CircleShapeYellowTop{
+    margin-left: 90px;
+    margin-top: 20px;
+  }
   .statistics-heading{
-    font-size: 62px;
+    font-size: 60px;
     color: $font-color;
     font-weight: 700;
     font-family: "Montserrat";
     text-align: center;
   }
   .statistics-details{
-    font-size: 25px;
+    font-size: 22px;
     color: $font-color;
     font-weight: 400;
     font-family: "Montserrat";
     text-align: center;
   }
   .img-section{
-    padding: 50px 0px 90px;
+    padding-bottom: 90px;
   }
   .shapes-section{
     height: 110px;
+  }
+}
+
+.order-section-two{
+  background-color: #ffd17e;
+  padding: 40px 0px 50px;
+  .CircleShapeBlueBottom{
+    position: relative;
+    left: 50px;
+  }
+  .verticalBlue{
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+  }
+  .CircleShapeBlueTop{
+    position: relative;
+    top: 80px;
+    right: 70px;
+  }
+  .food2Big{
+    position: relative;
+    z-index: 99;
+  }
+  .order-button{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 60px;
+    border-radius: 32px;
+    color: $font-color;
+    font-weight: 700;
+    background-color: #21243d;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  .order-text2{
+    padding-left: 100px;
+    padding-right: 10px;
+    .order-title{
+      font-size: 75px;
+      color: #21243d;
+      font-weight: 700;
+      font-family: "Montserrat";
+    }
+    .order-details{
+      font-size: 30px;
+      color: #21243d;
+      font-weight: 400;
+      font-family: "Montserrat";
+    }
   }
 }
 
@@ -231,9 +336,8 @@ nav .navbar-nav li a{
   background-image: url(/images/Shape.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 950px;
   background-color: #21243d;
-  padding-top: 150px;
+  padding: 150px 0px;
   .person-img{
     text-align: center;
   }
@@ -254,6 +358,7 @@ nav .navbar-nav li a{
 }
 
 .join-us{
+  overflow: hidden;
   background-color: #ffd17e;
   padding-top: 160px;
   padding-bottom: 75px;
@@ -284,8 +389,7 @@ nav .navbar-nav li a{
     }
     .subscribe-button{
       margin-left: -50px;
-      width: 222px;
-      height: 65px;
+      padding: 10px 40px;
       border-radius: 33px;
       background-color: #21243d;
       font-size: 25px;
@@ -300,75 +404,462 @@ nav .navbar-nav li a{
   }
   .horizontalBlue{
     position: relative;
-    left: 80px;
+    left: 60px;
     top: -50px
   }
-  .ShapeBlue{
+  .ShapeBlueTop{
     position: relative;
     top: -50px;
-    right: -435px;
+    right: -350px;
   }
-  .CircleShapeBlue{
+  .CircleShapeBlueTop{
     position: relative;
     top: -140px;
     right: -80px;
   }
 }
 
-// .txt{
-//   color: white;
-// }
-
-// .text-block{
-//   position: absolute;
-//   bottom: 100px;
-//   left: 20px;
-//   color: white;
-//   padding-left: 20px;
-//   .title{
-//     width: 626px;
-//     height: 100px;
-//     font-size: 100px;
-//     font-weight: 700;
-//     font-style: normal;
-//     letter-spacing: normal;
-//     line-height: normal;
-//   }
-//   .text{
-//     padding-top: 20px;
-//     width: 609px;
-//     height: 94px;
-//     font-size: 30px;
-//     font-weight: 400;
-//     font-style: normal;
-//     letter-spacing: normal
-//   }
-// }
-
-
-@media (min-width: 768px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) and (min-width: 768px){
   .menu-section{
-    .horizontalYellowRight,
-    .CircleShapeYellowRight,
-    .ShapeYellowTop,
-    .CircleShapeYellowLeft,
-    .verticalYellow,
-    .ShapeYellowBottom
-      {
-        display: none;
+    padding: 40px 0px;
+    @include menu-section();
+    .food1, .food2, .food3{
+      height: 150px;
+      width: 150px;
+    }
+    .text-section{
+      .menu-heading{
+        font-size: 60px;
+      }
+      .menu-details{
+        font-size: 24px;
       }
     }
+  }
   .order-section{
-    .CircleShapeBlueLeft,
-    .verticalBlueLeft{
+    padding: 100px 0px;
+    @include order-section();
+    .order-section-shapes{
+      margin-bottom: 0px;
+      display: none;
+    }
+    .inner-order-section{
+      margin-bottom: 30px;
+      .food1Big{
+        height: 300px;
+        width: 300px;
+      }
+      .order-text{
+        padding-right: 35px;
+        .order-title{
+          font-size: 60px;
+        }
+        .order-details{
+          font-size: 25px;
+        }
+        .order-button{
+          padding: 10px 30px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .statistics-section{
+    @include statistics-section();
+    .card1, .card2, .card3{
+      height: 200px;
+      width: 200px;
+    }
+    .shapes-section{
       display: none;
     }
   }
-  .subscribe{
-    .horizontalBlue,
-    .ShapeBlue,
-    .CircleShapeBlue{
+  .order-section-two{
+    padding: 100px 0px; 
+    @include order-section-two();
+    .food2Big{
+      height: 290px;
+      width: 290px;
+    }
+    .order-section-shapes{
       display: none;
+    }
+    .order-text2{
+      padding-left: 90px;
+      .order-title{
+        font-size: 60px;
+      }
+      .order-details{
+        font-size: 25px;
+      }
+      .order-button{
+        padding: 10px 30px;
+        margin-top: 30px;
+      }
+    }
+  }
+  .join-us{
+    @include join-us();
+    .shapes{
+      padding: 0px;
+    }
+    padding-top: 60px;
+    .join-us-title{
+      font-size: 70px;
+    }
+    .join-us-details{
+      font-size: 27px;
+    }
+    .subscribe{
+      margin-top: 60px;
+      .placeholder{
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+      .subscribe-button{
+        margin-left: -80px;
+        padding: 9px 30px;
+      }
+    }
+  }
+  .about-owner{
+    .person-img{
+      text-align: center;
+    }
+    .person-details{
+      font-size: 38px;
+    }
+    .person-name{
+      font-size: 40px;
+    }
+  }
+  .footer{
+    font-size: 22px;
+    ul{
+      list-style: none;
+    }
+    .follow-us{
+      padding: 150px 90px 0px;
+      .footer-title{
+        font-size: 32px;
+      }
+      flex: 0 0 auto;
+      width: 100%;    
+    }
+    .about-us{
+      padding: 80px 90px 150px;
+      .about, .services, .other{
+        font-size: 32px;
+      }
+      flex: 0 0 auto;
+      width: 100%;    
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .menu-section{
+    padding-top: 50px;
+    @include menu-section();
+    .food1, .food2, .food3{
+      height: 150px;
+      width: 150px;
+    }
+    .img-section{
+      .food{
+        padding-top: 30px;
+      }
+    }
+    .text-section{
+      text-align: center;
+      .menu-heading{
+        font-size: 56px;
+      }
+      .menu-details{
+        font-size: 22px;
+      }
+    }
+  }
+  .order-section{
+    padding: 50px 0px;
+    @include order-section();
+    .order-section-shapes{
+      margin-bottom: 0px;
+      display: none;
+    }
+    .inner-order-section{
+      margin-bottom: 30px;
+      .food1Big{
+        height: 300px;
+        width: 300px;
+      }
+      .order-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        .order-title{
+          font-size: 56px;
+        }
+        .order-details{
+          font-size: 24px;
+        }
+        .order-button{
+          padding: 10px 50px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .statistics-section{
+    .text-section{
+      padding: 0px 20px;
+    }
+    .img-section{
+      text-align: center;
+      div{
+        margin-top: 30px;
+      }
+    }
+    @include statistics-section();
+    .card1, .card2, .card3{
+      height: 170px;
+      width: 170px;
+    }
+    .shapes-section{
+      display: none;
+    }
+  }
+  .order-section-two{
+    padding: 60px 0px 60px;
+    @include order-section-two();
+    .food2Big{
+      height: 290px;
+      width: 290px;
+      padding-top: 30px;
+    }
+    .order-section-shapes{
+      display: none;
+    }
+    .order-text2{
+      padding-left: 50px;
+      padding-right: 50px;
+      .order-title{
+        font-size: 56px;
+      }
+      .order-details{
+        font-size: 24px;
+      }
+      .order-button{
+        padding: 10px 50px;
+        margin-top: 30px;
+      }
+    }
+  }
+  .join-us{
+    @include join-us();
+    .shapes{
+      padding: 0px;
+    }
+    padding-top: 60px;
+    .join-us-title{
+      font-size: 70px;
+    }
+    .join-us-details{
+      font-size: 27px;
+    }
+    .subscribe{
+      margin-top: 60px;
+      .placeholder{
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+      .subscribe-button{
+        margin-top: 20px;
+        padding: 9px 30px;
+        font-size: 20px;
+      }
+    }
+  }
+  .about-owner{
+    .person-img{
+      text-align: center;
+    }
+    .person-details{
+      font-size: 38px;
+    }
+    .person-name{
+      font-size: 40px;
+    }
+  }
+  .footer{
+    font-size: 22px;
+    ul{
+      list-style: none;
+    }
+    .follow-us{
+      padding: 150px 90px 0px;
+      .footer-title{
+        font-size: 32px;
+      }
+      flex: 0 0 auto;
+      width: 100%;    
+    }
+    .about-us{
+      padding: 80px 90px 150px;
+      .about, .services, .other{
+        font-size: 32px;
+      }
+      flex: 0 0 auto;
+      width: 100%;    
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-section{
+    padding: 100px 0px;
+    @include menu-section();
+      .food1, .food2, .food3{
+        height: 150px;
+        width: 150px;
+      }
+      .img-section{
+        .food{
+          padding-top: 30px;
+        }
+      }
+      .text-section{
+        text-align: center;
+        .menu-heading{
+          font-size: 60px;;
+        }
+        .menu-details{
+          font-size: 24px;
+        }
+      }
+  }
+  .order-section{
+    padding: 50px 0px;
+    @include order-section();
+    .order-section-shapes{
+      margin-bottom: 0px;
+      display: none;
+    }
+    .inner-order-section{
+      margin-bottom: 30px;
+      .food1Big{
+        height: 300px;
+        width: 300px;
+      }
+      .order-text{
+        padding-left: 100px;
+        padding-right: 50px;
+        .order-title{
+          font-size: 60px;
+        }
+        .order-details{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .statistics-section{
+    .text-section{
+      padding: 0px 50px;
+    }
+    .img-section{
+      text-align: center;
+      div{
+        margin-top: 30px;
+      }
+    }
+    @include statistics-section();
+    .card1, .card2, .card3{
+      height: 170px;
+      width: 170px;
+    }
+    .shapes-section{
+      display: none;
+    }
+  }
+  .order-section-two{
+    padding: 60px 0px 60px;
+    @include order-section-two();
+    .food2Big{
+      height: 290px;
+      width: 290px;
+      padding-top: 30px;
+    }
+    .order-section-shapes{
+      display: none;
+    }
+    .order-text2{
+      padding-left: 90px;
+      padding-right: 50px;
+      .order-title{
+        font-size: 60px;
+      }
+      .order-details{
+        font-size: 25px;
+      }
+      .order-button{
+        padding: 10px 50px;
+        margin-top: 30px;
+      }
+    }
+  }
+  .join-us{
+    @include join-us();
+    .shapes{
+      padding: 0px;
+    }
+    padding-top: 60px;
+    .join-us-title{
+      font-size: 70px;
+    }
+    .join-us-details{
+      font-size: 27px;
+    }
+    .subscribe{
+      margin-top: 60px;
+      .placeholder{
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+      .subscribe-button{
+        margin-top: 20px;
+        padding: 9px 30px;
+        font-size: 20px;
+      }
+    }
+  }
+  .about-owner{
+    .person-img{
+      text-align: center;
+    }
+    .person-details{
+      font-size: 38px;
+    }
+    .person-name{
+      font-size: 40px;
+    }
+  }
+  .footer{
+    font-size: 22px;
+    .follow-us{
+      padding: 150px 90px 0px;
+      .footer-title{
+        font-size: 30px;
+      }
+      flex: 0 0 auto;
+      width: 100%;    
+    }
+    .about-us{
+      padding: 80px 90px 150px;
+      .about, .services, .other{
+        font-size: 30px;
+      }
+      flex: 0 0 auto;
+      width: 100%;    
     }
   }
 }

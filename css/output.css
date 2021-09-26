@@ -1,9 +1,9 @@
-body {
+* {
   font-family: "Montserrat";
 }
 
-nav {
-  font-family: "Montserrat";
+body {
+  overflow-x: hidden;
 }
 
 .custom-navbar {
@@ -14,80 +14,72 @@ nav .navbar-nav li a {
   font-size: 25px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Montserrat";
 }
 
 .background-img {
   background-image: url(/images/Image.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 878px;
 }
 .background-img .text {
-  padding-top: 200px;
+  margin: 200px auto 200px 40px;
 }
-.background-img .heading {
+.background-img .text .heading {
   color: #ffffff;
   font-size: 100px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  font-family: "Montserrat";
 }
-.background-img .details {
+.background-img .text .details {
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  font-family: "Montserrat";
 }
-.background-img .order-button {
+.background-img .text .order-button {
   border-radius: 33px;
   background-color: #21243d;
   font-size: 25px;
   padding: 15px 17px;
   color: #ffffff;
   font-weight: 700;
-  font-family: "Montserrat";
   text-align: center;
   text-transform: uppercase;
 }
 
 .menu-section {
   overflow: hidden;
+  position: relative;
+  overflow: hidden;
   background-color: #21243d;
   color: #ffffff;
 }
-.menu-section .horizontalYellowRight {
+.menu-section .horizontalYellow {
   position: relative;
-  left: 300px;
-  top: -60px;
+  left: 200px;
+  top: -20px;
 }
 .menu-section .CircleShapeYellowRight {
   position: relative;
-  right: -100px;
-  top: -460px;
+  top: -100px;
+  left: 50px;
 }
 .menu-section .ShapeYellowTop {
   position: relative;
-  right: 320px;
-  top: 50px;
+  left: -500px;
+  top: 120px;
 }
 .menu-section .CircleShapeYellowLeft {
   position: relative;
-  top: 200px;
+  top: 160px;
   left: -90px;
 }
 .menu-section .verticalYellow {
   position: relative;
-  top: -200px;
-  right: -190px;
+  top: 10px;
+  left: 25px;
 }
 .menu-section .ShapeYellowBottom {
   position: relative;
-  top: 120px;
+  left: 1170px;
 }
 .menu-section .text-section {
   text-align: center;
@@ -105,27 +97,27 @@ nav .navbar-nav li a {
   font-family: "Montserrat";
 }
 
-.header {
+.footer {
   background-color: #111111;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   font-family: "Montserrat";
 }
-.header ul {
+.footer ul {
   list-style: none;
 }
-.header .follow-us {
-  padding: 200px 140px;
+.footer .follow-us {
+  padding: 200px 100px 200px 100px;
 }
-.header .follow-us .header-title {
-  font-size: 32px;
+.footer .follow-us .footer-title {
+  font-size: 30px;
 }
-.header .about-us {
+.footer .about-us {
   padding: 200px 0px 200px;
 }
-.header .about-us .about, .header .about-us .services, .header .about-us .other {
-  font-size: 32px;
+.footer .about-us .about, .footer .about-us .services, .footer .about-us .other {
+  font-size: 30px;
 }
 
 .img-title {
@@ -143,92 +135,150 @@ nav .navbar-nav li a {
 }
 
 .order-section {
+  overflow: hidden;
   background-color: #ffd17e;
-  padding: 200px 0px 150px;
 }
 .order-section .food1Big {
-  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+.order-section .inner-order-section .order-text {
+  padding-left: 0px;
+  padding-right: 30px;
+}
+.order-section .inner-order-section .order-text .order-title {
+  font-size: 75px;
+  color: #21243d;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.order-section .inner-order-section .order-text .order-details {
+  font-size: 30px;
+  color: #21243d;
+  font-weight: 400;
+  font-family: "Montserrat";
 }
 .order-section .CircleShapeBlueLeft {
   position: relative;
-  top: -200px;
-  left: 200px;
+  top: 130px;
+  left: 50px;
+  z-index: 0;
+}
+.order-section .ShapeBlue {
+  position: relative;
+  top: 120px;
+}
+.order-section .verticalBlueRight {
+  position: relative;
+  top: 30px;
+  right: 20px;
 }
 .order-section .verticalBlueLeft {
   position: relative;
-  top: 400px;
-  right: 170px;
+  left: 40px;
+  bottom: 25px;
+}
+.order-section .CircleShapeBlueRight {
+  position: relative;
+  left: 40px;
+  bottom: 80px;
 }
 .order-section .order-button {
+  font-size: 25px;
+  text-align: center;
   padding: 10px 60px;
   border-radius: 32px;
+  color: #ffffff;
+  font-weight: 700;
   background-color: #21243d;
   text-transform: uppercase;
   margin-top: 50px;
-}
-.order-section .order-text {
-  padding: 0px 20px;
-}
-.order-section .order-text .order-title {
-  font-size: 75px;
-  color: #21243d;
-  font-weight: 700;
-  font-family: "Montserrat";
-}
-.order-section .order-text .order-details {
-  font-size: 30px;
-  color: #21243d;
-  font-weight: 400;
-  font-family: "Montserrat";
-}
-.order-section .order-text2 {
-  padding-left: 150px;
-  padding-right: 35px;
-}
-.order-section .order-text2 .order-title {
-  font-size: 75px;
-  color: #21243d;
-  font-weight: 700;
-  font-family: "Montserrat";
-}
-.order-section .order-text2 .order-details {
-  font-size: 30px;
-  color: #21243d;
-  font-weight: 400;
-  font-family: "Montserrat";
 }
 
 .statistics-section {
   background-color: #21243d;
 }
+.statistics-section .CircleShapeYellowTop {
+  margin-left: 90px;
+  margin-top: 20px;
+}
 .statistics-section .statistics-heading {
-  font-size: 62px;
+  font-size: 60px;
   color: #ffffff;
   font-weight: 700;
   font-family: "Montserrat";
   text-align: center;
 }
 .statistics-section .statistics-details {
-  font-size: 25px;
+  font-size: 22px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Montserrat";
   text-align: center;
 }
 .statistics-section .img-section {
-  padding: 50px 0px 90px;
+  padding-bottom: 90px;
 }
 .statistics-section .shapes-section {
   height: 110px;
+}
+
+.order-section-two {
+  background-color: #ffd17e;
+  padding: 40px 0px 50px;
+}
+.order-section-two .CircleShapeBlueBottom {
+  position: relative;
+  left: 50px;
+}
+.order-section-two .verticalBlue {
+  position: relative;
+  left: 70px;
+  bottom: 50px;
+}
+.order-section-two .CircleShapeBlueTop {
+  position: relative;
+  top: 80px;
+  right: 70px;
+}
+.order-section-two .food2Big {
+  position: relative;
+  z-index: 99;
+}
+.order-section-two .order-button {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 60px;
+  border-radius: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #21243d;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.order-section-two .order-text2 {
+  padding-left: 100px;
+  padding-right: 10px;
+}
+.order-section-two .order-text2 .order-title {
+  font-size: 75px;
+  color: #21243d;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.order-section-two .order-text2 .order-details {
+  font-size: 30px;
+  color: #21243d;
+  font-weight: 400;
+  font-family: "Montserrat";
 }
 
 .about-owner {
   background-image: url(/images/Shape.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 950px;
   background-color: #21243d;
-  padding-top: 150px;
+  padding: 150px 0px;
 }
 .about-owner .person-img {
   text-align: center;
@@ -249,6 +299,7 @@ nav .navbar-nav li a {
 }
 
 .join-us {
+  overflow: hidden;
   background-color: #ffd17e;
   padding-top: 160px;
   padding-bottom: 75px;
@@ -281,8 +332,7 @@ nav .navbar-nav li a {
 }
 .join-us .subscribe .subscribe-button {
   margin-left: -50px;
-  width: 222px;
-  height: 65px;
+  padding: 10px 40px;
   border-radius: 33px;
   background-color: #21243d;
   font-size: 25px;
@@ -296,22 +346,25 @@ nav .navbar-nav li a {
 }
 .join-us .horizontalBlue {
   position: relative;
-  left: 80px;
+  left: 60px;
   top: -50px;
 }
-.join-us .ShapeBlue {
+.join-us .ShapeBlueTop {
   position: relative;
   top: -50px;
-  right: -435px;
+  right: -350px;
 }
-.join-us .CircleShapeBlue {
+.join-us .CircleShapeBlueTop {
   position: relative;
   top: -140px;
   right: -80px;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .menu-section .horizontalYellowRight,
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .menu-section {
+    padding: 40px 0px;
+  }
+  .menu-section .horizontalYellow,
 .menu-section .CircleShapeYellowRight,
 .menu-section .ShapeYellowTop,
 .menu-section .CircleShapeYellowLeft,
@@ -319,16 +372,533 @@ nav .navbar-nav li a {
 .menu-section .ShapeYellowBottom {
     display: none;
   }
+  .menu-section .food1, .menu-section .food2, .menu-section .food3 {
+    height: 150px;
+    width: 150px;
+  }
+  .menu-section .text-section .menu-heading {
+    font-size: 60px;
+  }
+  .menu-section .text-section .menu-details {
+    font-size: 24px;
+  }
 
+  .order-section {
+    padding: 100px 0px;
+  }
   .order-section .CircleShapeBlueLeft,
-.order-section .verticalBlueLeft {
+.order-section .verticalBlueLeft,
+.order-section .ShapeBlue,
+.order-section .verticalBlue,
+.order-section .CircleShapeBlueRight {
+    display: none;
+  }
+  .order-section .order-section-shapes {
+    margin-bottom: 0px;
+    display: none;
+  }
+  .order-section .inner-order-section {
+    margin-bottom: 30px;
+  }
+  .order-section .inner-order-section .food1Big {
+    height: 300px;
+    width: 300px;
+  }
+  .order-section .inner-order-section .order-text {
+    padding-right: 35px;
+  }
+  .order-section .inner-order-section .order-text .order-title {
+    font-size: 60px;
+  }
+  .order-section .inner-order-section .order-text .order-details {
+    font-size: 25px;
+  }
+  .order-section .inner-order-section .order-text .order-button {
+    padding: 10px 30px;
+    margin-top: 30px;
+  }
+
+  .statistics-section .horizontalYellow,
+.statistics-section .ShapeYellow,
+.statistics-section .CircleShapeYellowTop,
+.statistics-section .CircleShapeYellow,
+.statistics-section .horizontalYellow,
+.statistics-section .ShapeYellow {
+    display: none;
+  }
+  .statistics-section .card1, .statistics-section .card2, .statistics-section .card3 {
+    height: 200px;
+    width: 200px;
+  }
+  .statistics-section .shapes-section {
     display: none;
   }
 
-  .subscribe .horizontalBlue,
-.subscribe .ShapeBlue,
-.subscribe .CircleShapeBlue {
+  .order-section-two {
+    padding: 100px 0px;
+  }
+  .order-section-two .ShapeBlue,
+.order-section-two .horizontalBlue,
+.order-section-two .CircleShapeBlueBottom,
+.order-section-two .CircleShapeBlueTop,
+.order-section-two .verticalBlue {
     display: none;
+  }
+  .order-section-two .food2Big {
+    height: 290px;
+    width: 290px;
+  }
+  .order-section-two .order-section-shapes {
+    display: none;
+  }
+  .order-section-two .order-text2 {
+    padding-left: 90px;
+  }
+  .order-section-two .order-text2 .order-title {
+    font-size: 60px;
+  }
+  .order-section-two .order-text2 .order-details {
+    font-size: 25px;
+  }
+  .order-section-two .order-text2 .order-button {
+    padding: 10px 30px;
+    margin-top: 30px;
+  }
+
+  .join-us {
+    padding-top: 60px;
+  }
+  .join-us .horizontalBlue,
+.join-us .ShapeBlueTop,
+.join-us .CircleShapeBlueTop,
+.join-us .ShapeBlueBottom,
+.join-us .CircleShapeBlueBottom,
+.join-us .verticalBlue {
+    display: none;
+  }
+  .join-us .shapes {
+    padding: 0px;
+  }
+  .join-us .join-us-title {
+    font-size: 70px;
+  }
+  .join-us .join-us-details {
+    font-size: 27px;
+  }
+  .join-us .subscribe {
+    margin-top: 60px;
+  }
+  .join-us .subscribe .placeholder {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .join-us .subscribe .subscribe-button {
+    margin-left: -80px;
+    padding: 9px 30px;
+  }
+
+  .about-owner .person-img {
+    text-align: center;
+  }
+  .about-owner .person-details {
+    font-size: 38px;
+  }
+  .about-owner .person-name {
+    font-size: 40px;
+  }
+
+  .footer {
+    font-size: 22px;
+  }
+  .footer ul {
+    list-style: none;
+  }
+  .footer .follow-us {
+    padding: 150px 90px 0px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .footer .follow-us .footer-title {
+    font-size: 32px;
+  }
+  .footer .about-us {
+    padding: 80px 90px 150px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .footer .about-us .about, .footer .about-us .services, .footer .about-us .other {
+    font-size: 32px;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .menu-section {
+    padding-top: 50px;
+  }
+  .menu-section .horizontalYellow,
+.menu-section .CircleShapeYellowRight,
+.menu-section .ShapeYellowTop,
+.menu-section .CircleShapeYellowLeft,
+.menu-section .verticalYellow,
+.menu-section .ShapeYellowBottom {
+    display: none;
+  }
+  .menu-section .food1, .menu-section .food2, .menu-section .food3 {
+    height: 150px;
+    width: 150px;
+  }
+  .menu-section .img-section .food {
+    padding-top: 30px;
+  }
+  .menu-section .text-section {
+    text-align: center;
+  }
+  .menu-section .text-section .menu-heading {
+    font-size: 56px;
+  }
+  .menu-section .text-section .menu-details {
+    font-size: 22px;
+  }
+
+  .order-section {
+    padding: 50px 0px;
+  }
+  .order-section .CircleShapeBlueLeft,
+.order-section .verticalBlueLeft,
+.order-section .ShapeBlue,
+.order-section .verticalBlue,
+.order-section .CircleShapeBlueRight {
+    display: none;
+  }
+  .order-section .order-section-shapes {
+    margin-bottom: 0px;
+    display: none;
+  }
+  .order-section .inner-order-section {
+    margin-bottom: 30px;
+  }
+  .order-section .inner-order-section .food1Big {
+    height: 300px;
+    width: 300px;
+  }
+  .order-section .inner-order-section .order-text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .order-section .inner-order-section .order-text .order-title {
+    font-size: 56px;
+  }
+  .order-section .inner-order-section .order-text .order-details {
+    font-size: 24px;
+  }
+  .order-section .inner-order-section .order-text .order-button {
+    padding: 10px 50px;
+    margin-top: 30px;
+  }
+
+  .statistics-section .text-section {
+    padding: 0px 20px;
+  }
+  .statistics-section .img-section {
+    text-align: center;
+  }
+  .statistics-section .img-section div {
+    margin-top: 30px;
+  }
+  .statistics-section .horizontalYellow,
+.statistics-section .ShapeYellow,
+.statistics-section .CircleShapeYellowTop,
+.statistics-section .CircleShapeYellow,
+.statistics-section .horizontalYellow,
+.statistics-section .ShapeYellow {
+    display: none;
+  }
+  .statistics-section .card1, .statistics-section .card2, .statistics-section .card3 {
+    height: 170px;
+    width: 170px;
+  }
+  .statistics-section .shapes-section {
+    display: none;
+  }
+
+  .order-section-two {
+    padding: 60px 0px 60px;
+  }
+  .order-section-two .ShapeBlue,
+.order-section-two .horizontalBlue,
+.order-section-two .CircleShapeBlueBottom,
+.order-section-two .CircleShapeBlueTop,
+.order-section-two .verticalBlue {
+    display: none;
+  }
+  .order-section-two .food2Big {
+    height: 290px;
+    width: 290px;
+    padding-top: 30px;
+  }
+  .order-section-two .order-section-shapes {
+    display: none;
+  }
+  .order-section-two .order-text2 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .order-section-two .order-text2 .order-title {
+    font-size: 56px;
+  }
+  .order-section-two .order-text2 .order-details {
+    font-size: 24px;
+  }
+  .order-section-two .order-text2 .order-button {
+    padding: 10px 50px;
+    margin-top: 30px;
+  }
+
+  .join-us {
+    padding-top: 60px;
+  }
+  .join-us .horizontalBlue,
+.join-us .ShapeBlueTop,
+.join-us .CircleShapeBlueTop,
+.join-us .ShapeBlueBottom,
+.join-us .CircleShapeBlueBottom,
+.join-us .verticalBlue {
+    display: none;
+  }
+  .join-us .shapes {
+    padding: 0px;
+  }
+  .join-us .join-us-title {
+    font-size: 70px;
+  }
+  .join-us .join-us-details {
+    font-size: 27px;
+  }
+  .join-us .subscribe {
+    margin-top: 60px;
+  }
+  .join-us .subscribe .placeholder {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .join-us .subscribe .subscribe-button {
+    margin-top: 20px;
+    padding: 9px 30px;
+    font-size: 20px;
+  }
+
+  .about-owner .person-img {
+    text-align: center;
+  }
+  .about-owner .person-details {
+    font-size: 38px;
+  }
+  .about-owner .person-name {
+    font-size: 40px;
+  }
+
+  .footer {
+    font-size: 22px;
+  }
+  .footer ul {
+    list-style: none;
+  }
+  .footer .follow-us {
+    padding: 150px 90px 0px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .footer .follow-us .footer-title {
+    font-size: 32px;
+  }
+  .footer .about-us {
+    padding: 80px 90px 150px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .footer .about-us .about, .footer .about-us .services, .footer .about-us .other {
+    font-size: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .menu-section {
+    padding: 100px 0px;
+  }
+  .menu-section .horizontalYellow,
+.menu-section .CircleShapeYellowRight,
+.menu-section .ShapeYellowTop,
+.menu-section .CircleShapeYellowLeft,
+.menu-section .verticalYellow,
+.menu-section .ShapeYellowBottom {
+    display: none;
+  }
+  .menu-section .food1, .menu-section .food2, .menu-section .food3 {
+    height: 150px;
+    width: 150px;
+  }
+  .menu-section .img-section .food {
+    padding-top: 30px;
+  }
+  .menu-section .text-section {
+    text-align: center;
+  }
+  .menu-section .text-section .menu-heading {
+    font-size: 60px;
+  }
+  .menu-section .text-section .menu-details {
+    font-size: 24px;
+  }
+
+  .order-section {
+    padding: 50px 0px;
+  }
+  .order-section .CircleShapeBlueLeft,
+.order-section .verticalBlueLeft,
+.order-section .ShapeBlue,
+.order-section .verticalBlue,
+.order-section .CircleShapeBlueRight {
+    display: none;
+  }
+  .order-section .order-section-shapes {
+    margin-bottom: 0px;
+    display: none;
+  }
+  .order-section .inner-order-section {
+    margin-bottom: 30px;
+  }
+  .order-section .inner-order-section .food1Big {
+    height: 300px;
+    width: 300px;
+  }
+  .order-section .inner-order-section .order-text {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+  .order-section .inner-order-section .order-text .order-title {
+    font-size: 60px;
+  }
+  .order-section .inner-order-section .order-text .order-details {
+    font-size: 25px;
+  }
+
+  .statistics-section .text-section {
+    padding: 0px 50px;
+  }
+  .statistics-section .img-section {
+    text-align: center;
+  }
+  .statistics-section .img-section div {
+    margin-top: 30px;
+  }
+  .statistics-section .horizontalYellow,
+.statistics-section .ShapeYellow,
+.statistics-section .CircleShapeYellowTop,
+.statistics-section .CircleShapeYellow,
+.statistics-section .horizontalYellow,
+.statistics-section .ShapeYellow {
+    display: none;
+  }
+  .statistics-section .card1, .statistics-section .card2, .statistics-section .card3 {
+    height: 170px;
+    width: 170px;
+  }
+  .statistics-section .shapes-section {
+    display: none;
+  }
+
+  .order-section-two {
+    padding: 60px 0px 60px;
+  }
+  .order-section-two .ShapeBlue,
+.order-section-two .horizontalBlue,
+.order-section-two .CircleShapeBlueBottom,
+.order-section-two .CircleShapeBlueTop,
+.order-section-two .verticalBlue {
+    display: none;
+  }
+  .order-section-two .food2Big {
+    height: 290px;
+    width: 290px;
+    padding-top: 30px;
+  }
+  .order-section-two .order-section-shapes {
+    display: none;
+  }
+  .order-section-two .order-text2 {
+    padding-left: 90px;
+    padding-right: 50px;
+  }
+  .order-section-two .order-text2 .order-title {
+    font-size: 60px;
+  }
+  .order-section-two .order-text2 .order-details {
+    font-size: 25px;
+  }
+  .order-section-two .order-text2 .order-button {
+    padding: 10px 50px;
+    margin-top: 30px;
+  }
+
+  .join-us {
+    padding-top: 60px;
+  }
+  .join-us .horizontalBlue,
+.join-us .ShapeBlueTop,
+.join-us .CircleShapeBlueTop,
+.join-us .ShapeBlueBottom,
+.join-us .CircleShapeBlueBottom,
+.join-us .verticalBlue {
+    display: none;
+  }
+  .join-us .shapes {
+    padding: 0px;
+  }
+  .join-us .join-us-title {
+    font-size: 70px;
+  }
+  .join-us .join-us-details {
+    font-size: 27px;
+  }
+  .join-us .subscribe {
+    margin-top: 60px;
+  }
+  .join-us .subscribe .placeholder {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .join-us .subscribe .subscribe-button {
+    margin-top: 20px;
+    padding: 9px 30px;
+    font-size: 20px;
+  }
+
+  .about-owner .person-img {
+    text-align: center;
+  }
+  .about-owner .person-details {
+    font-size: 38px;
+  }
+  .about-owner .person-name {
+    font-size: 40px;
+  }
+
+  .footer {
+    font-size: 22px;
+  }
+  .footer .follow-us {
+    padding: 150px 90px 0px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .footer .follow-us .footer-title {
+    font-size: 30px;
+  }
+  .footer .about-us {
+    padding: 80px 90px 150px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .footer .about-us .about, .footer .about-us .services, .footer .about-us .other {
+    font-size: 30px;
   }
 }
 

@@ -14,12 +14,12 @@
 <body>
     <div>
       
-      <nav class="navbar custom-navbar navbar-expand-lg">
-        <div class="container-fluid justify-content-around">
+      <nav class="navbar navbar-dark custom-navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand p-2"><img src="logo/Logo.svg" class="m-2" style="height: 80px; width: 120px;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mymenu" aria-controls="mymenu" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand p-2 ms-5"><img src="logo/Logo.svg" class="m-2" style="height: 80px; width: 120px;"></a>
           <div class="collapse navbar-collapse custom-navlink p-2" id="mymenu">
             <ul class="navbar-nav w-100 justify-content-center">
               <li class="nav-item px-3"><a class="nav-link" href="#home">Home</a></li>
@@ -28,15 +28,15 @@
               <li class="nav-item px-3"><a class="nav-link" href="#about">About</a></li>
               <li class="nav-item px-3"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
+            <div class="p-2 m-2 justify-content-end col-1"><img src="images/Search.png"></div>
           </div>
-          <div class="p-2 justify-content-end col-1"><img src="images/Search.png"></div>
         </div>
       </nav>
 
       <div class="background-img">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 text">
+            <div class="col-xs-12 col-lg-6 text">
               <div class="heading">
                 Title Here
               </div>
@@ -53,81 +53,102 @@
         </div>
       </div>
 
-      <div class="menu-section py-5">
-        <img src="images/horizontalYellow.png" class="horizontalYellowRight">
-        <div class="row pb-5 text-section">
-          <div class="col-lg-3 col-md-2 col-sm-1"></div>
-          <div class="col-lg-6 col-md-8 col-sm-10">
-            <div class="menu-heading">
+      <div class="container-fluid menu-section pb-5">
+        <img src="images/horizontalYellow.png" class="horizontalYellow">
+        <div class="row pb-3 text-section">
+          <div class="col-md-2 col-sm-1"></div>
+          <div class="col-md-8 col-sm-10 px-5">
             <img src="images/ShapeYellow.png" class="ShapeYellowTop">
-              Popular Menu
+            <div class="menu-heading">
+            Popular Menu
             </div>
             <div class="menu-details">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
             </div>
           </div>
-          <div class="col-lg-3 col-md-2 col-sm-1"></div>
+          <div class="col-md-2 col-sm-1">
+            <img src="images/CircleShapeYellow.png" class="CircleShapeYellowRight">
+          </div>
         </div>
-        <div class="row py-5 img-section">
-          <div class="col-2">
+        
+        <div class="d-md-flex justify-content-around py-5 img-section">
+          <div>
             <img src="images/CircleShapeYellow.png" class="CircleShapeYellowLeft">
           </div>
-          <div class="col-2">
-            <img src="images/food1.png">
-            <div class="text-center my-3">
+          <div class="text-center food">
+            <img src="images/food1.png" class="food1">
+            <div class="text-center">
               <div class="img-title">Title Here</div>
               <div class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
           </div>
-          <div class="col-1"></div>
-          <div class="col-2">
-            <img src="images/food2.png">
-            <div class="text-center my-3">
+
+          <div class="text-center food">
+            <img src="images/food2.png" class="food2">
+            <div class="text-center">
               <div class="img-title">Title Here</div>
               <div class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
           </div>
-          <div class="col-1"></div>
-          <div class="col-2">
-            <img src="images/food3.png">
-            <div class="text-center my-3">
+
+          <div class="text-center food">
+            <img src="images/food3.png" class="food3">
+            <div>
               <div class="img-title">Title Here</div>
               <div class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
           </div>
-          <div class="col-2">
-            <img src="images/CircleShapeYellow.png" class="CircleShapeYellowRight">
-            <img src="images/verticalYellow.png" class="verticalYellow">
+            <div>
+              <img src="images/verticalYellow.png" class="verticalYellow">
+            </div>
+        </div>
+
+          <div>
             <img src="images/ShapeYellow.png" class="ShapeYellowBottom">
           </div>
-        </div>
       </div>
 
-      <div class="fluid-container order-section">
-        <div class="row">
-          <div class="col-6">
-            <img src="images/CircleShapeBlue.png" class="CircleShapeBlueLeft">
-            <img src="images/verticalBlue.svg" class="verticalBlueLeft">
+      <div class="container-fluid order-section">
+        <div class="row order-section-shapes">
+          <div class="col-2"><img src="images/CircleShapeBlue.png" class="CircleShapeBlueLeft"></div>
+          <div class="col-4"></div>
+          <div class="col-2">
+            <img src="images/ShapeBlue.svg" class="ShapeBlue">
+          </div>
+          <div class="col-3"></div>
+          <div class="col-1">
+            <img src="images/verticalBlue.svg" class="verticalBlueRight">
+          </div>
+        </div>
+        <div class="row inner-order-section">
+          <div class="col-md-6 col-sm-12 text-center">
             <img src="images/food1Big.png" class="food1Big">
           </div>
-          <div class="col-6 order-text">
-            <img src="images/ShapeBlue.svg" class="ShapeBlue">
-            <img src="images/verticalBlue.svg" class="verticalBlueRight">
+          <div class="col-md-6 col-sm-12 order-text">
             <div class="order-title">Title Here</div>
             <div class="order-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </div>
             <button class="order-button">order now</button>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-2">
+            <img src="images/verticalBlue.svg" class="verticalBlueLeft">
+          </div>
+          <div class="col-8"></div>
+          <div class="col-2">
             <img src="images/CircleShapeBlue.png" class="CircleShapeBlueRight">
           </div>
         </div>
       </div>
 
       <div class="statistics-section">
-        <div class="row text-section py-5">
-          <div class="col-3 text-center">
-            <img src="images/horizontalYellow.png" class="mb-4"><br>
-            <img src="images/ShapeYellow.png" class="mt-5">
+        <div class="container-fluid row text-section py-5">
+          <div class="col-md-3 col-sm-1 text-center">
+            <img src="images/horizontalYellow.png" class="mb-4 horizontalYellow"><br>
+            <img src="images/ShapeYellow.png" class="mt-5 ShapeYellow">
           </div>
-          <div class="col-6">
+          <div class="col-md-6" col-sm-10>
             <div class="statistics-heading">
               Statistics
             </div>
@@ -135,77 +156,90 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.  
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-md-3 col-sm-1">
             <img src="images/CircleShapeYellow.png" class="CircleShapeYellowTop">
           </div>
         </div>
-        <div class="row img-section">
-          <div class="col-2"></div>
-          <div class="col-2">
-            <img src="images/Card1.png">
+        <div class="d-md-flex justify-content-evenly img-section">
+          <div>
+            <img src="images/Card1.png" class="card1">
           </div>
-          <div class="col-1"></div>
-          <div class="col-2">
-            <img src="images/Card2.png">
+          <div>
+            <img src="images/Card2.png" class="card2">
           </div>
-          <div class="col-1"></div>
-          <div class="col-2">
-            <img src="images/Card3.png">
+          <div>
+            <img src="images/Card3.png" class="card3">
           </div>
-          <div class="col-2"></div>
         </div>
         
         <div class="row shapes-section">
           <div class="col-3"></div>
           <div class="col-2">
-            <img src="images/CircleShapeYellow.png">
+            <img src="images/CircleShapeYellow.png" class="CircleShapeYellow">
           </div>
           <div class="col-2"></div>
           <div class="col-2">
-            <img src="images/horizontalYellow.png">
+            <img src="images/horizontalYellow.png" class="horizontalYellow">
           </div>
           <div class="col-1"></div>
           <div class="col-1">
-            <img src="images/ShapeYellow.png">
+            <img src="images/ShapeYellow.png" class="ShapeYellow">
           </div>
         </div>
       </div>
 
-      <div class="fluid-container order-section">
+      <div class="container-fluid order-section-two">
+        <div class="row mt-4 order-section-shapes">
+          <div class="col-1"></div>
+          <div class="col-2 py-5 mt-5"><img src="images/ShapeBlue.svg" class="ShapeBlue"></div>
+          <div class="col-2"></div>
+          <div class="col-1"><img src="images/horizontalBlue.png" class="horizontalBlue"></div>
+          <div class="col-4"></div>
+          <div class="col-2">
+            <img src="images/CircleShapeBlue.png" class="CircleShapeBlueTop">
+          </div>
+        </div>
         <div class="row">
-          <div class="col-6 order-text2">
-            <img src="images/ShapeBlue.svg">
-            <img src="images/horizontalBlue.png">
+          <div class="col-md-6 col-sm-12 order-text2">
             <div class="order-title">Title Here</div>
             <div class="order-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </div>
             <button class="order-button">order now</button>
-            <img src="images/CircleShapeBlue.png">
           </div>
-          <div class="col-6 text-center">
-            <img src="images/food2Big.png">
+          <div class="col-md-6 col-sm-12 text-center">
+            <img src="images/food2Big.png" class="food2Big">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-2">
+            <img src="images/CircleShapeBlue.png" class="CircleShapeBlueBottom">
+          </div>
+          <div class="col-4"></div>
+          <div class="col-2">
+            <img src="images/verticalBlue.svg" class="verticalBlue">
           </div>
         </div>
       </div>
 
       <div class="about-owner">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-8">
+        <div class="container-fluid row">
+          <div class="col-1"></div>
+          <div class="col-10">
             <div class="person-img"><img src="images/person.png"></div>
             <div class="person-details mt-5">If you are a culinary fan, if you like to spend time in your kitchen, you likely find yourself looking for reliable resources through which you can</div>
             <div class="person-name mt-5">Phoebe Frazier</div>
           </div>
         </div>
-        <div class="col-2"></div>
+        <div class="col-1"></div>
       </div>
 
       <div class="join-us">
-        <div class="row">
+        <div class="container-fluid row">
           <div class="col-2">
             <img src="images/horizontalBlue.png" class="horizontalBlue">
           </div>
           <div class="col-8">
-            <img src="images/ShapeBlue.svg" class="ShapeBlue">
+            <img src="images/ShapeBlue.svg" class="ShapeBlueTop">
             <div class="join-us-title">
               Title Here
             </div>
@@ -218,27 +252,27 @@
             </div>
           </div>
           <div class="col-2">
-            <img src="images/CircleShapeBlue.png" class="CircleShapeBlue">
+            <img src="images/CircleShapeBlue.png" class="CircleShapeBlueTop">
           </div>
         </div>
         <div class="row shapes">
           <div class="col-4 mt-5">
-            <img src="images/ShapeBlue.svg">
+            <img src="images/ShapeBlue.svg" class="ShapeBlueBottom">
           </div>
           <div class="col-4 mt-3">
-            <img src="images/CircleShapeBlue.png">
+            <img src="images/CircleShapeBlue.png" class="CircleShapeBlueBottom">
           </div>
           <div class="col-4">
-            <img src="images/verticalBlue.svg">
+            <img src="images/verticalBlue.svg" class="verticalBlue">
           </div>
         </div>
       </div>
 
-      <div class="header">
-        <div class="row">
+      <div class="footer">
+        <div class="container-fluid row">
           <div class="col-6 follow-us">
-            <div class="header-title">Title Here</div>
-            <div class="header-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. </div>
+            <div class="footer-title">Title Here</div>
+            <div class="footer-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. </div>
             <div class="d-flex justify-content-start mt-3">
               <img src="images/Instagram.png" alt="No Image" class="pe-3">
               <img src="images/Facebook.png" alt="No Image" class="pe-3">
@@ -248,7 +282,7 @@
           </div>
           <div class="col-6 about-us">
             <div class="row">
-              <div class="col-4">
+              <div class="col-md-4 col-sm-6">
                 <ul>
                   <p class="about">About</p>
                   <li>History</li>
@@ -258,7 +292,7 @@
                   <li>Privacy Policy</li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-sm-6">
                 <ul>
                   <p class="services">Services</p>
                   <li>How to Order</li>
@@ -268,7 +302,7 @@
                   <li>Payment Method</li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-sm-6">
                 <ul>
                   <p class="other">Other</p>
                   <li>Contact us</li>
